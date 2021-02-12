@@ -40,7 +40,8 @@ func projectDir(src string) (string, error) {
 	if err != nil {
 		return "", err
 	}
-	return path.Join(src, pDir), nil
+	// return path.Join(src, pDir), nil
+	return src, nil
 }
 
 // Gets an environment variable, throws error when it is not present.
