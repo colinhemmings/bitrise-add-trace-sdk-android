@@ -35,10 +35,10 @@ type Configs struct {
 
 // Returns the directory for the Android application.
 func projectDir(src string) (string, error) {
-	pDir, err := env(projectDirEnvName)
-	if err != nil {
-		return "", err
-	}
+	// pDir, err := env(projectDirEnvName)
+	// if err != nil {
+	// 	return "", err
+	// }
 	// return path.Join(src, pDir), nil
 	return src, nil
 }
